@@ -36,7 +36,7 @@ const PersonCredit: React.FC<Props> = props => {
         font-weight: normal;
         text-align: center;
         
-        @media screen  and (min-width: 768px) {
+        @media screen  and (min-width: 568px) {
           text-align: right;
         }
       }
@@ -51,7 +51,7 @@ const PersonCredit: React.FC<Props> = props => {
       }
 
       &-right {
-        @media screen  and (min-width: 768px) {
+        @media screen  and (min-width: 568px) {
           text-align: right;
         }
       }
@@ -61,7 +61,7 @@ const PersonCredit: React.FC<Props> = props => {
       border-bottom: 1px solid ${COLORS.BORDER_COLOR};
     }
 
-    @media screen  and (min-width: 768px) {
+    @media screen  and (min-width: 568px) {
       justify-content: space-between;
       text-align: left;
       flex-direction: row;

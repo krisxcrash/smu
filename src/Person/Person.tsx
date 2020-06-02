@@ -19,17 +19,17 @@ const Person: React.FC<Props> = props => {
   const { className = '', accountData } = props;
   const theme = useTheme();
   const style = css`
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     align-items: center;
-
-    @media screen  and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95vw;
+    
+    
+    @media screen  and (min-width: 568px) {
+      border-left: none;
       flex-direction: row;
-    }
-
-    .Person {
-      width: 850px;
+      max-width:850px;
     }
 
     .PersonCard-container {
@@ -37,15 +37,15 @@ const Person: React.FC<Props> = props => {
     }
 
     .PersonDetails-container {
-      padding: ${theme.spacing(1)}px;
+      border-top: none;
       border: 2px solid ${COLORS.BORDER_COLOR};
       border-top: none;
+      padding: ${theme.spacing(1)}px;
      
-      @media screen  and (min-width: 768px) {
-        width: 500px;
+      @media screen  and (min-width: 568px) {
         border-left: none;
         border-top: 2px solid ${COLORS.BORDER_COLOR};
-
+        width: 500px;
     }
 
     }
